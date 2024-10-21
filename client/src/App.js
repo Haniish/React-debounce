@@ -12,6 +12,7 @@ function App() {
       .catch(error => console.error('Error fetching items:', error));
   };
 
+  
   const debouncedFetchItems = useCallback(
     debounce(fetchItems, 300),
     []
